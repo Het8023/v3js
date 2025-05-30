@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
         // 这里的名称要和主应用改造是配置项中的name保持一致
         plugins: [vue()],
         server: {
-            open: true,
+            open: false,
             port: 8888,
             proxy: {
                 [env.VITE_APP_BASE_API]: {
